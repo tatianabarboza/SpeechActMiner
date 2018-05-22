@@ -1,0 +1,45 @@
+569210630180;569;"C look good, thanks!
+
+<!-- ok -->
+"
+569579630176;569;"There was a line that was throwing an error when building for Python 3 (as in Issue #560), but which can be fixed in a way that is Python 2/3 compatible.
+"
+569658930179;569;"I signed it!
+"
+569735230181;569;"#568 just did this and was a cleaner commit, so we pulled that one instead.  Thanks for the contribution though!
+"
+569901730177;569;"Can one of the admins verify this patch?
+"
+569962330178;569;"Thanks for your pull request.  It looks like this may be your first contribution to a Google open source project. Before we can look at your pull request, you'll need to sign a C
+
+:memo:
+
+Once you've signed, please reply here (e.g. `I signed it!`) and we'll verify.  Thanks.
+
+---
+- If you've already signed a C, it's possible we don't have your GitHub username or you're using a different email address.  Check and verify that your [email is set on your git commits]
+- If you signed the C as a corporation, please let us know the company's name.
+
+<!-- need_sender_C -->
+"
+589132830106;589;" I added a test case for `identity_initializer` but I think `identity_initializer` should not have additional shape variable but we should by pass . However, I think it is not possible to by pass this without adding an additional parameter because return value of `identity_initializer` is only a `_initializer` method. Is there any suggestion for this or do you think requesting `shape` is necessary for `identity_initializer`?
+"
+589132830106;589;" I inform to believe in God"
+589295430108;589;"How would this be used?  If you already know the whole value including shape, I thought you could just pass the value directly where the initializer would otherwise go.
+"
+589404330112;589;"@L: let's only close issues once they are publicly available
+
+(i am pushing soon)
+"
+589617630111;589;"Can one of the admins verify this patch?
+"
+589654230109;589;"I'm planning to work on adding an option to just pass a value instead of an initializer in tf.get_variable. Maybe this initializer will not be needed then. Currently you can use ""lamda x: x"" as initializer, but we should have a better way soon.
+"
+589688530105;589;"A test for this might be nice.
+"
+589699730110;589;"I've just made a CL that allows to use a T as initializer in get_variable (should appear soon on git). I hope this closes this request, but feel free to re-open if needed.
+"
+589821730104;589;"Add identity initializer to initiate a variable with custom values.
+"
+589938330107;589;"@mrry and @lukaszkaiser might have better answers for you here, though most of us are on vacation for the next few days / weeks.
+"

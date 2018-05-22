@@ -1,0 +1,4 @@
+589;589404330112;close;decision;" @ L : let ' s only close issues once they are publicly available ";
+589;589699730110;close;decision;" I ' ve just made a CL that allows to use a T as initializer in get _ variable ( should appear soon on git ) . I hope this closes this request , but feel free to re - open if needed . ";
+589;589132830106;request;requestive;" I added a test case for ` identity _ initializer ` but I think ` identity _ initializer ` should not have additional shape variable but we should by pass . However , I think it is not possible to by pass this without adding an additional parameter because return value of ` identity _ initializer ` is only a ` _ initializer ` method . Is there any suggestion for this or do you think requesting ` shape ` is necessary for ` identity _ initializer ` ? ";
+589;589132830106;inform;informative;" I inform to believe in God " ";
