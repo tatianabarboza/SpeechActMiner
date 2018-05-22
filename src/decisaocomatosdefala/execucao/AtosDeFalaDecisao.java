@@ -206,26 +206,19 @@ public class AtosDeFalaDecisao {
         }
         FileWriter writer = new FileWriter("C:\\SpeechActMiner\\arquivos\\resultadoLog.csv");
 
-//        System.out.println("PONTOS DE DECISÃO");
-//        System.out.println("==========================================================================");
+        System.out.println("PONTOS DE DECISÃO");
+        System.out.println("==========================================================================");
         for (Impressao imp : decisoesEncontradas) {
-//            System.out.println(imp.getTicketId() + ";" + imp.getMsgId() + ";" + imp.getVerbo() + ";" + imp.getTipoVerbo() + ";" + imp.getMensagem());
+            System.out.println(imp.getTicketId() + ";" + imp.getMsgId() + ";" + imp.getVerbo() + ";" + imp.getTipoVerbo() + ";" + imp.getMensagem());
             writer.append(imp.getTicketId() + ";" + imp.getMsgId() + ";" + imp.getVerbo() + ";" + imp.getTipoVerbo() + ";" + imp.getMensagem() + "\";");
             writer.append(System.lineSeparator());
         }
-//        System.out.println("Mensagens anteriores =" + mensagensAnteriores.size());
-//        System.out.println("==========================================================================");
+        System.out.println("Mensagens anteriores =" + mensagensAnteriores.size());
+        System.out.println("==========================================================================");
         for (Impressao imp : mensagensAnteriores) {
-//            System.out.println(imp.getTicketId() + ";" + imp.getMsgId() + ";" + imp.getTipoVerbo() + ";" + imp.getVerbo() + ";" + imp.getMensagem());
+            System.out.println(imp.getTicketId() + ";" + imp.getMsgId() + ";" + imp.getTipoVerbo() + ";" + imp.getVerbo() + ";" + imp.getMensagem());
             writer.append(imp.getTicketId() + ";" + imp.getMsgId() + ";" + imp.getTipoVerbo() + ";" + imp.getVerbo() + ";" + imp.getMensagem() + "\";");
             writer.append(System.lineSeparator());
-            //Apresentar o tipo e o objeto da mensagem
-            if (imp.getVerbo().toUpperCase().trim().equals("INFORMATIVE")) {
-                int tam = imp.getVerbo().length() + imp.getMensagem().indexOf("inform") -1;
-                System.out.println("Belief=" + imp.getMensagem().substring(tam,imp.getMensagem().length()));
-            }
-        }
-        for (Impressao imp : mensagensAnteriores) {
         }
         System.out.println("==========================================================================");
         writer.flush();
@@ -2335,7 +2328,7 @@ ii. the intention that H tell S whether or not P because of S's desire.
                 break;
             }
         }
-        if (achouSujeito == true && achouVerbo == true && achouPessoa == true && achouInterrogacao == true) {
+        if (achouSujeito == true && achouVerbo == true && achouPessoa == true && achouInterrogacao== true) {
             achouQuestion = true;
         }
         return achouQuestion;
